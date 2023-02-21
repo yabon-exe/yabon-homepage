@@ -111,7 +111,7 @@ import Top from './components/Top.vue'
 
 /*－－－－－－－－－－ 大見出し －－－－－－－－－－*/
   .headingL {
-    font-size: clamp(3rem, 4rem, 4rem);
+    font-size: 8vw;
     margin: 40px 0;
     margin: clamp(3rem, 4rem, 4rem) 0;
 
@@ -122,7 +122,7 @@ import Top from './components/Top.vue'
 
 /*－－－－－－－－－－ 中見出し －－－－－－－－－－*/
   .headingM {
-    font-size: clamp(2.4rem, 2rem, 3rem);
+    font-size: 6vw;
     margin: clamp(2rem, 3rem, 3rem) 0;
 
     &.ja {
@@ -132,7 +132,7 @@ import Top from './components/Top.vue'
 
 /*－－－－－－－－－－ 小見出し －－－－－－－－－－*/
   .headingS {
-    font-size: clamp(2rem, 2rem, 2.2rem);
+    font-size: 4vw;
     margin: 20px 0;
 
     &.ja {
