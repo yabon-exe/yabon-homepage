@@ -8,7 +8,7 @@
 <style lang="scss">
   .myname {
     font-size: 8vw;
-    margin-top: -1.6em;
+    margin-top: -2.6em
   }
 
   .profile__img {
@@ -23,6 +23,14 @@
       -o-border-radius: 50%;
       margin: auto;
       max-width: 100%;
+    }
+  }
+
+  /* PC */
+  @media screen and (min-width: 1025px) {
+    .myname {
+      font-size: 6vw;
+      margin-top: -2.6em
     }
   }
 </style>

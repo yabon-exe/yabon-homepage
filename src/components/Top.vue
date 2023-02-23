@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import TopIcon from './TopIcon.vue'
-import SectionAboutMe from './SectionAboutMe.vue'
-import SectionAttention from './SectionAttention.vue'
+  import BuildVersion from './BuildVersion.vue'
+  import TopIcon from './TopIcon.vue'
+  import SectionAboutMe from './SectionAboutMe.vue'
+  import SectionAttention from './SectionAttention.vue'
+  import MobileGameDemoList from './MobileGameDemoList.vue'
 </script>
 
 <template>
+  <BuildVersion />
   <TopIcon />
   <SectionAboutMe />
   <SectionAttention />
+  <MobileGameDemoList />
 </template>
 
 <style lang="scss">
@@ -42,7 +46,6 @@ import SectionAttention from './SectionAttention.vue'
 
     .box__title {
       position: relative;
-      ;
       z-index: 2;
     }
   }
@@ -51,7 +54,10 @@ import SectionAttention from './SectionAttention.vue'
   @media screen and (max-width: 520px) {
     .box {
       padding: 10px 20px 20px;
+      margin: 30px 0px;
       .box__title {
+        margin: 0px;
+        margin: -35px 0px 0px 0px;
       }
     }
   }

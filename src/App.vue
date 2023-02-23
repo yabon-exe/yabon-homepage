@@ -78,7 +78,6 @@ import Top from './components/Top.vue'
   @media screen and (min-width: 1025px),
   print {
     .mainwrapper {
-      max-width: 800px;
       margin: 0 auto;
       padding: 80px 20px;
     }
@@ -112,28 +111,16 @@ import Top from './components/Top.vue'
 /*－－－－－－－－－－ 大見出し －－－－－－－－－－*/
   .headingL {
     font-size: 10vw;
-    &.ja {
-      font-size: clamp(2.4rem, 3rem, 3.2rem);
-    }
   }
-
 /*－－－－－－－－－－ 中見出し －－－－－－－－－－*/
   .headingM {
     font-size: 7vw;
-
-    &.ja {
-      font-size: clamp(2rem, 2rem, 2.4rem);
-    }
   }
 
 /*－－－－－－－－－－ 小見出し －－－－－－－－－－*/
   .headingS {
     font-size: 4vw;
     margin: 20px 0;
-
-    &.ja {
-      font-size: clamp(1.8rem, 2rem, 2rem);
-    }
   }
 
 /*－－－－－－－－－－ 最小見出し －－－－－－－－－－*/
@@ -161,6 +148,30 @@ import Top from './components/Top.vue'
     background-color: $subcolor;
     width: fit-content;
   }
+
+  /* PC */
+  @media screen and (min-width: 1025px) {
+/*－－－－－－－－－－ 大見出し －－－－－－－－－－*/
+    .headingL {
+      font-size: 5vw;
+    }
+/*－－－－－－－－－－ 中見出し －－－－－－－－－－*/
+    .headingM {
+      font-size: 7vw;
+    }
+
+/*－－－－－－－－－－ 小見出し －－－－－－－－－－*/
+    .headingS {
+      font-size: 4vw;
+      margin: 20px 0;
+    }
+
+/*－－－－－－－－－－ 最小見出し －－－－－－－－－－*/
+    .headingSS {
+      font-size: clamp(1.8rem, 2rem, 2rem);
+    }
+  }
+
 
 
 /*－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
