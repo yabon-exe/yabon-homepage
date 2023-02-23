@@ -2,12 +2,12 @@
   <!-- プロフィール画像 -->
   <div class="profile__img"><img src="/img/phone-game-demo.jpg" alt=""></div>
   <!-- 名前 -->
-  <h1 class="myname">Game Demo<br/>Gallery</h1>
+  <h1 class="myname">Mobile Game<br/>Demo Gallery</h1>
 </template>
 
 <style lang="scss">
   .myname {
-    font-size: 10vw;
+    font-size: 8vw;
     margin-top: -1.6em;
   }
 

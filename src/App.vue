@@ -17,7 +17,7 @@ import Top from './components/Top.vue'
   $fontcolor: #333;
   $maincolor: #c0d9d3;
   $subcolor: #ffee7c;
-  $basecolor: rgba(#faf4e8, 0.3);
+  $basecolor: #c8fcff;
   $white: #fff;
   $black: #000;
   $twi: #1DA1F2;
@@ -40,7 +40,6 @@ import Top from './components/Top.vue'
     color: $fontcolor;
     letter-spacing: 2px;
     line-height: 1.8;
-    background-color: $basecolor;
 
     @media screen and (max-width: 520px) {
       font-size: 1.4rem;
@@ -68,7 +67,8 @@ import Top from './components/Top.vue'
   }
 
   .mainwrapper {
-    padding: 60px 10px;
+    padding: 60px 30px;
+    background-color: #b1ffe1;
     >:first-child {
       margin-top: 0;
     }
@@ -85,7 +85,6 @@ import Top from './components/Top.vue'
   }
 
   p {
-    margin: 20px 0;
     letter-spacing: 1px;
     text-align: justify;
   }
@@ -101,6 +100,7 @@ import Top from './components/Top.vue'
   h3,
   h4,
   h5 {
+    color: black;
     font-family: $headingfont;
     font-weight: normal;
     letter-spacing: 4px;
@@ -111,10 +111,7 @@ import Top from './components/Top.vue'
 
 /*－－－－－－－－－－ 大見出し －－－－－－－－－－*/
   .headingL {
-    font-size: 8vw;
-    margin: 40px 0;
-    margin: clamp(3rem, 4rem, 4rem) 0;
-
+    font-size: 10vw;
     &.ja {
       font-size: clamp(2.4rem, 3rem, 3.2rem);
     }
@@ -122,8 +119,7 @@ import Top from './components/Top.vue'
 
 /*－－－－－－－－－－ 中見出し －－－－－－－－－－*/
   .headingM {
-    font-size: 6vw;
-    margin: clamp(2rem, 3rem, 3rem) 0;
+    font-size: 7vw;
 
     &.ja {
       font-size: clamp(2rem, 2rem, 2.4rem);
@@ -143,7 +139,6 @@ import Top from './components/Top.vue'
 /*－－－－－－－－－－ 最小見出し －－－－－－－－－－*/
   .headingSS {
     font-size: clamp(1.8rem, 2rem, 2rem);
-    margin: 20px 0;
   }
 
 /*－－－－－－－－－－ 文字装飾 －－－－－－－－－－*/
