@@ -6,7 +6,7 @@
             "video": "/res/mobile-demo/swipe-controller.mp4",
             "text": "スワイプで動くキャラクターを作成。スワイプで引かれる線の太さが、移動速度を表している。白猫プロジェクトのような、上部視点でキャラクターを操作するアクションゲームに使えそう。",
             "demo": "https://yabon-exe.github.io/swipe-controller/index.html",
-            "code": "https://github.com/yabon-exe/cocos-2d-demo/blob/master/assets/script/touch-controller.ts"
+            "code": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/touch-controller/touch-controller.ts"
         }
     ]
 }
