@@ -4,7 +4,12 @@ defineProps<{
   video: string,
   text: string,
   demo: string,
-  code: string
+  code: string,
+  codes: {
+    id: number,
+    name: string,
+    url: string
+  }[]
 }>()
 </script>
 
@@ -29,10 +34,12 @@ defineProps<{
     </tr>
     <tr>
       <td class="demo-link">
-        <a :href="demo">デモページ</a>
+        <a :href="demo" target="_blank">デモページ</a>
       </td>
       <td class="git-link">
-        <a :href="code">サンプルコード</a>
+        <a :href="codedata.url" target="_blank" v-for="codedata in codes">
+          {{codedata.name}}
+        </a>
       </td>
     </tr>
   </table>
@@ -63,6 +70,14 @@ defineProps<{
     .git-link {
       text-align: center;
       width: 50%;
+      a {
+        margin: 0 10px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100px;
+      }
     }
   }
   /* PC */

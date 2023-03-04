@@ -14,6 +14,7 @@
           :text="item.text"
           :demo="item.demo"
           :code="item.code"
+          :codes="item.codes"
         />
       </div>
     </div>

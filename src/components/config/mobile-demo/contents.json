@@ -6,7 +6,44 @@
             "video": "/res/mobile-demo/swipe-controller.mp4",
             "text": "スワイプで動くキャラクターを作成。スワイプで引かれる線の太さが、移動速度を表している。白猫プロジェクトのような、上部視点でキャラクターを操作するアクションゲームに使えそう。",
             "demo": "https://yabon-exe.github.io/swipe-controller/index.html",
-            "code": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/touch-controller/TouchController.ts"
+            "code": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/touch-controller/TouchController.ts",
+            "codes": [
+                {
+                    "id": 0,
+                    "name": "スワイプ",
+                    "url": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/touch-controller/TouchController.ts"
+                },
+                {
+                    "id": 1,
+                    "name": "プレイヤー",
+                    "url": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/player/Player.ts"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "title": "弾丸",
+            "video": "/res/mobile-demo/straight-bullet.mp4",
+            "text": "プレイヤーに向かって直進し、接触したら消滅する弾丸を作成。弾丸Class、そしてその子クラスである直進弾丸Classとして実装しているため、新しいタイプの弾丸の実装が容易になる（はず。。）",
+            "demo": "https://yabon-exe.github.io/straight-bullet/index.html",
+            "code": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/bullet/Bullet.ts",
+            "codes": [
+                {
+                    "id": 0,
+                    "name": "砲台",
+                    "url": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/battery/Battery.ts"
+                },
+                {
+                    "id": 1,
+                    "name": "弾丸",
+                    "url": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/bullet/Bullet.ts"
+                },
+                {
+                    "id": 2,
+                    "name": "直進弾丸",
+                    "url": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/bullet/straight/StraightBullet.ts"
+                }
+            ]
         }
     ]
 }
