@@ -4,7 +4,6 @@ defineProps<{
   video: string,
   text: string,
   demo: string,
-  code: string,
   codes: {
     id: number,
     name: string,
@@ -25,6 +24,7 @@ defineProps<{
         <div class="video-content">
           <div class="video">
             <video controls :src="video"/>
+            <a :href="demo" target="_blank">デモを試す</a>
           </div>
           <div class="text">
             {{text}}
@@ -33,9 +33,6 @@ defineProps<{
       </td>
     </tr>
     <tr>
-      <td class="demo-link">
-        <a :href="demo" target="_blank">デモページ</a>
-      </td>
       <td class="git-link">
         <a :href="codedata.url" target="_blank" v-for="codedata in codes">
           {{codedata.name}}
@@ -57,26 +54,28 @@ defineProps<{
     }
     .video-content {
       .video {
-
+        text-align: center;
+        width: 100%;
+        a {
+          display: inline-block;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 100%;
+        }
       }
       .text {
 
       }
     }
-    .demo-link {
-      text-align: center;
-      width: 50%;
-    }
     .git-link {
       text-align: center;
-      width: 50%;
       a {
-        margin: 0 10px;
         display: inline-block;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        width: 100px;
+        width: 100%;
       }
     }
   }
