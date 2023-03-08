@@ -1,5 +1,6 @@
 <script setup lang="ts">
 defineProps<{
+  createdate: string,
   title: string,
   video: string,
   text: string,
@@ -21,6 +22,9 @@ defineProps<{
     </tr>
     <tr>
       <td colspan="2">
+        <div>
+          {{createdate}}
+        </div>
         <div class="video-content">
           <div class="video">
             <video controls :src="video"/>
@@ -74,7 +78,6 @@ defineProps<{
         display: inline-block;
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
         width: 100%;
       }
     }

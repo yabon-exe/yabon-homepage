@@ -9,11 +9,11 @@
     <div class="demo-content-list">
       <div v-for="item in data.contents" class="demo-content">
         <MobileGameDemo
+          :createdate="item.createdate"
           :title="item.title"
           :video="item.video"
           :text="item.text"
           :demo="item.demo"
-          :code="item.code"
           :codes="item.codes"
         />
       </div>
@@ -32,9 +32,9 @@
   /* PC */
   @media screen and (min-width: 1025px) {
     .demo-content-list {
-      display: flex;
     }
     .demo-content {
+      display: inline-block;
       width: 50%;
       padding: 20px;
     }
