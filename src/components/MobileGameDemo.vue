@@ -66,6 +66,7 @@ defineProps<{
           overflow: hidden;
           white-space: nowrap;
           width: 100%;
+          text-align: center;
         }
       }
       .text {
@@ -85,14 +86,25 @@ defineProps<{
   /* PC */
   @media screen and (min-width: 1025px) {
     .mobile-demo {
+      video {
+        width: 300px;
+        height: 620px;
+      }
       .title {
         font-size: 3vw;
       }
       .video-content {
-        display: flex;
-      }
-      .text {
-        padding: 10px;
+        .video {
+          text-align: left;
+          width: 30%;
+          display: inline-block;
+        }
+        .text {
+          padding: 10px;
+          width: 70%;
+          display: inline-block;
+          vertical-align: top;
+        }
       }
     }
   }

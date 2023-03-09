@@ -36,6 +36,7 @@
     .demo-content {
       display: inline-block;
       width: 50%;
+      height: 940px;
       padding: 20px;
     }
   }
