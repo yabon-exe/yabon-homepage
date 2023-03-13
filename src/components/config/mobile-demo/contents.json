@@ -6,7 +6,7 @@
             "title": "スワイプコントローラー",
             "video": "/res/mobile-demo/swipe-controller.mp4",
             "text": "スワイプで動くキャラクターを作成。スワイプで引かれる線の太さが、移動速度を表している。白猫プロジェクトのような、上部視点でキャラクターを操作するアクションゲームに使えそう。",
-            "demo": "https://yabon-exe.github.io/swipe-controller/index.html",
+            "demo": "https://yabon-exe.github.io/demo/swipe-controller/index.html",
             "codes": [
                 {
                     "id": 0,
@@ -26,7 +26,7 @@
             "title": "弾丸",
             "video": "/res/mobile-demo/straight-bullet.mp4",
             "text": "プレイヤーに向かって直進し、接触したら消滅する弾丸を作成。弾丸Class、そしてその子クラスである直進弾丸Classとして実装しているため、新しいタイプの弾丸の実装が容易になる（はず。。）",
-            "demo": "https://yabon-exe.github.io/straight-bullet/index.html",
+            "demo": "https://yabon-exe.github.io/demo/straight-bullet/index.html",
             "codes": [
                 {
                     "id": 0,
@@ -51,7 +51,7 @@
             "title": "ヒットストップ",
             "video": "/res/mobile-demo/damage-stop.mp4",
             "text": "弾丸がヒットしたら、ダメージを受ける動作をするようにプレイヤーを修正。スマブラの桜井さんがお話されていた「ヒットストップ」を応用してみた。Colliderのtagを設定することで、弾丸に衝突した時のみ、ダメージモーションするようにした。",
-            "demo": "https://yabon-exe.github.io/damage-stop/index.html",
+            "demo": "https://yabon-exe.github.io/demo/damage-stop/index.html",
             "codes": [
                 {
                     "id": 0,
@@ -76,12 +76,27 @@
             "title": "追跡弾丸",
             "video": "/res/mobile-demo/chase-bullet.mp4",
             "text": "プレイヤーを追跡する弾丸を実装。「プレイヤーに向けて移動する」というプログラムを、startではなく、updateに移動しただけなので、直進弾丸の実装とあまり大きな差は無い。通常、自機狙いはatan三角関数などを使うが、ベクトルが使えるなら。より直感的に作ることができる。",
-            "demo": "https://yabon-exe.github.io/chase-bullet/index.html",
+            "demo": "https://yabon-exe.github.io/demo/chase-bullet/index.html",
             "codes": [
                 {
                     "id": 2,
                     "name": "追跡弾丸のプログラム",
                     "url": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/bullet/chase/ChaseBullet.ts"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "createdate": "2023-03-13",
+            "title": "加速度弾丸",
+            "video": "/res/mobile-demo/accelerate-bullet.mp4",
+            "text": "プレイヤーに向かって直進する弾丸の速度を、加速度的に増加するように修正したプログラム。加速度的に動く物体は等速で動く物に比べて変則的に動くので、プレイヤーの不意を突けて面白いかもしれないが、これだけだとちょっと物足らない感じがある。",
+            "demo": "https://yabon-exe.github.io/demo/accelerate-bullet/index.html",
+            "codes": [
+                {
+                    "id": 0,
+                    "name": "加速度弾丸",
+                    "url": "https://github.com/yabon-exe/cocosv3-demo-2d/blob/master/assets/object/bullet/accelerate/AccelerateBullet.ts"
                 }
             ]
         }
